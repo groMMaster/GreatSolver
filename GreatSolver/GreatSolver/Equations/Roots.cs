@@ -22,5 +22,14 @@ namespace GreatSolver
             IsAny = false;
             Value = value;
         }
+
+        public override string ToString()
+        {
+            if (IsAny) return "X - любое";
+            if (Value is null) return "Нет корней";
+
+            int i = 1;
+            return String.Join("; ", Value.Select(x => "X" + (i++).ToString() + " = " + x.ToString()).ToArray());
+        }
     }
 }
