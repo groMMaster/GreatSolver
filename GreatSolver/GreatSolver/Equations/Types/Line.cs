@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GreatSolver.Equations.Types
+namespace GreatSolver
 {
     public class Line : IEquation
     {
@@ -22,7 +22,7 @@ namespace GreatSolver.Equations.Types
             if (A == 0)
             {
                 if (B == 0) return new Roots(isAny: true);
-                throw new Exception();
+                return new Roots();
             }
 
             return new Roots(B / A);

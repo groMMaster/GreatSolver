@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GreatSolver.Equations.Types
+namespace GreatSolver
 {
-    class QuadraticEquation : IEquation
+    public class QuadraticEquation : IEquation
     {
         private double a;
         private double b;

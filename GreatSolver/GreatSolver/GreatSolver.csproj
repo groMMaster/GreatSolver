@@ -39,6 +39,8 @@
     <Compile Include="Equations\IEquation.cs" />
     <Compile Include="Equations\Roots.cs" />
     <Compile Include="Equations\Types\Line.cs" />
+    <Compile Include="Equations\Types\QuadraticEquation.cs" />
+    <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

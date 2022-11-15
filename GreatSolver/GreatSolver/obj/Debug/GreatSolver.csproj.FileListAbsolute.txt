@@ -1,0 +1,7 @@
+C:\Users\groMM\source\repos\GreatSolver\GreatSolver\GreatSolver\GreatSolver\obj\Debug\GreatSolver.csprojAssemblyReference.cache
+C:\Users\groMM\source\repos\GreatSolver\GreatSolver\GreatSolver\GreatSolver\obj\Debug\GreatSolver.csproj.CoreCompileInputs.cache
+C:\Users\groMM\source\repos\GreatSolver\GreatSolver\GreatSolver\GreatSolver\bin\Debug\GreatSolver.exe.config
+C:\Users\groMM\source\repos\GreatSolver\GreatSolver\GreatSolver\GreatSolver\bin\Debug\GreatSolver.exe
+C:\Users\groMM\source\repos\GreatSolver\GreatSolver\GreatSolver\GreatSolver\bin\Debug\GreatSolver.pdb
+C:\Users\groMM\source\repos\GreatSolver\GreatSolver\GreatSolver\GreatSolver\obj\Debug\GreatSolver.exe
+C:\Users\groMM\source\repos\GreatSolver\GreatSolver\GreatSolver\GreatSolver\obj\Debug\GreatSolver.pdb
