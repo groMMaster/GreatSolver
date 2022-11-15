@@ -6,53 +6,55 @@ namespace GreatSolver.Tests
     [TestFixture]
     public class QuadraticEquation_Test
     {
-        [Test]
-        public void PositiveDiscriminant()
+        void TestQuadraticEquation(double a, double b, double c, params double[] expectedResults)
         {
-            var quation = new QuadraticEquation(1, 2, -3);
-            Assert.AreEqual(new double[] { -3, 1 }, quation.GetRoots().Value);
+            var quation = new QuadraticEquation(a, b, c);
+            var result = quation.GetRoots();
+
+            Assert.AreEqual(expectedResults, result.Value);
+            Assert.IsFalse(result.IsAny);
         }
 
         [Test]
+        public void PositiveDiscriminant()
+        {
+            TestQuadraticEquation(1, 2, -3, -3, 1);
+        }
+
+        [Test]  
         public void DiscriminantIsZero()
         {
-            var quation = new QuadraticEquation(1, -2, 1);
-            Assert.AreEqual(new double[] { 1 }, quation.GetRoots().Value);
+            TestQuadraticEquation(1, -2, 1, 1);
         }
 
         [Test]
         public void NegativeDiscriminant()
         {
-            var quation = new QuadraticEquation(1, 2, 3);
-            Assert.AreEqual(null, quation.GetRoots().Value);
+            TestQuadraticEquation(1, 2, 3, null);
         }
 
         [Test]
         public void BIsZeroOne()
         {
-            var quation = new QuadraticEquation(1, 0, -4);
-            Assert.AreEqual(new double[] { -2, 2 }, quation.GetRoots().Value);
+            TestQuadraticEquation(1, 0, -4, -2, 2);
         }
 
         [Test]
         public void BIsZeroTwo()
         {
-            var quation = new QuadraticEquation(1, 0, 4);
-            Assert.AreEqual(null, quation.GetRoots().Value);
+            TestQuadraticEquation(1, 0, 4, null);
         }
 
         [Test]
         public void BIsZeroThree()
         {
-            var quation = new QuadraticEquation(-1, 0, 4);
-            Assert.AreEqual(new double[] { 2, -2 }, quation.GetRoots().Value);
+            TestQuadraticEquation(-1, 0, 4, 2, -2);
         }
 
         [Test]
         public void CIsZero()
         {
-            var quation = new QuadraticEquation(1, 4, 0);
-            Assert.AreEqual(new double[] {-4, 0 }, quation.GetRoots().Value);
+            TestQuadraticEquation(1, 4, 0, -4, 0);
         }
 
         [Test]
@@ -64,8 +66,7 @@ namespace GreatSolver.Tests
         [Test]
         public void BAndCIsZero()
         {
-            var quation = new QuadraticEquation(1, 0, 0);
-            Assert.AreEqual(new double[] { 0 }, quation.GetRoots().Value);
+            TestQuadraticEquation(1, 0, 0, 0);
         }
     }
 }
