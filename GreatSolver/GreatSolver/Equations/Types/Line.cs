@@ -8,13 +8,13 @@ namespace GreatSolver
 {
     public class Line : IEquation
     {
-        public double A;
-        public double B;
+        private readonly double a;
+        private readonly double b;
 
         public Line(double a, double b)
         {
-            A = a;
-            B = b;
+            this.a = a;
+            this.a = b;
         }
 
         public Roots GetRoots()

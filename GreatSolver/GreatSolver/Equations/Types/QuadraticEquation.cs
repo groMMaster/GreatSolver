@@ -6,9 +6,9 @@ namespace GreatSolver
 {
     public class QuadraticEquation : IEquation
     {
-        private double a;
-        private double b;
-        private double c;
+        private readonly double a;
+        private readonly double b;
+        private readonly double c;
 
 
         public QuadraticEquation(double a, double b, double c)
