@@ -9,6 +9,10 @@ namespace GreatSolver
     class Program
     {
         public static void Main()
-        { }
+        {
+            var s = new RootStandard(new double[] { 1, 2 });
+            var a = new RootAny();
+            var d = new RootEmpty();
+        }
     }
 }
